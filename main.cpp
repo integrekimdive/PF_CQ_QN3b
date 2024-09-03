@@ -1,16 +1,16 @@
 #include <iostream>
 
-using namespace std;
+using namespace std;//for names and objects
 
-int gcd(int a, int b) {
-    if (b == 0)
+int gcd(int a, int b) {//my function
+    if (b == 0)//the condition
         return a;
     else
         return gcd(b, a % b);
 }
 
-int reduce(int num, int denom) {
-    int com_divisor = gcd(num, denom);
+int reduce(int num, int denom) {//second function
+    int com_divisor = gcd(num, denom);//variable declaration
     return num / com_divisor;
 }
 
